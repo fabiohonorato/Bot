@@ -1,20 +1,6 @@
 /*
-* JANGAN UBAH-UBAH INFO!!!
-* "JANGAN MODAL NAMA DOANG BRO!!!"
-* SCRIPT BY MASLENT 
-* JANGAN MODAL NAMA DOANG BOSQ
-* HARGAILAH YY MEMBUAT SCRIPT INI BOSQ
-* JANGAN UBAH-UBAH INFO!!!
-* MASLENT ID
-* BOLEH UBAH TAPI KECUALI INFO!!!
+* NÃO ALTERE A INFORMAÇÃO !!!
 */
-const A187 = 'MASLENT'; // JANGAN UBAH-UBAH INFO!!!
-const instagram = 'https://instagram.com/'; // JANGAN UBAH-UBAH INFO!!!
-const nomer = 'Wa.me/+5521997123716'; // JANGAN UBAH-UBAH INFO!!!
-const aktif = 'Tergantung jaringan'; // JANGAN UBAH-UBAH INFO!!!
-const groupwhatsapp = 'https://chat.whatsapp.com/KTlC0MXi3WJChdQeps5flt'; // JANGAN UBAH-UBAH INFO!!!
-const youtube = 'https://youtube.com/channel/UCRaC-6JyCW_iqbW1DbuXVxQ'; // JANGAN UBAH-UBAH INFO!!!
-//A187ID
 const qrcode = require("qrcode-terminal");
 const moment = require("moment");
 const cheerio = require("cheerio");
@@ -33,7 +19,7 @@ const aris2 = require("./lib/aris2.js");
 const aris3 = require("./lib/aris3.js");
 const aris4 = require("./lib/aris4.js");
 const readTextInImage = require('./lib/ocr')
-//A187ID
+//
 const
 {
    WAConnection,
@@ -79,11 +65,11 @@ fs.existsSync('./session.json') && conn.loadAuthInfo('./session.json')
 //conn.connectOptions.agent = ProxyAgent ('http://1.0.180.120:8080')
 conn.connect();
 
-conn.on('user-presence-update', json => console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @_BANGLENT`))
+conn.on('user-presence-update', json => console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by Sr.X`))
 conn.on('message-status-update', json =>
 {
    const participant = json.participant ? ' (' + json.participant + ')' : '' // participant exists when the message is from a group
-   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @_BANGLENT`)
+   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by Sr.X`)
 })
 
 conn.on('message-new', async(m) =>
@@ -115,7 +101,7 @@ conn.sendMessage(group.gid, "hello everyone", MessageType.extendedText) // say h
 // FFA187ID
 if(text.includes("!cek")){
 var num = text.replace(/!cek/ , "")
-var idn = num.replace("0","+62");
+var idn = num.replace("0","+55");
 
 console.log(id);
 const gg = idn+'@s.whatsapp.net'
@@ -130,7 +116,7 @@ if (text.includes("#say")){
 conn.sendMessage(id, teks, MessageType.text)
 }
 //ChatA187ID
-else if (text == 'assalamualaikum'){
+else if (text == 'Assalamualaikum'){
 conn.sendMessage(id, ' _3aalaikumsalam, _Iyah aku disini kak...ada yang bisa kami bantu? Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
 }
 else if (text == 'salam'){
